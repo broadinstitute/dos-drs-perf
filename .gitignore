@@ -1,0 +1,8 @@
+**/*.json
+**/*.pem
+*~
+.DS_Store
+.ensime
+.idea
+/site
+target

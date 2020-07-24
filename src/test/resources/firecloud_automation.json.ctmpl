@@ -1,0 +1,3 @@
+{{with $environment := env "ENVIRONMENT"}}{{with $jsonFile := vault (printf "secret/dsde/firecloud/%s/common/firecloud-account.json" $environment)}}
+{{$jsonFile.Data | toJSONPretty }}
+{{end}}{{end}}
